@@ -17,3 +17,4 @@ common/
 kernel/
 busybox/
 toybox/
+bin/
