@@ -1,4 +1,4 @@
-# build-kernel-bkqpb6
+# build-aosp-yrieq1
 
 Ubuntu 20.04.6 LTS (GitHub Codespaces)
 
