@@ -1,0 +1,19 @@
+# .gitignore
+
+# Ignore all build directories
+*/build/*
+
+# Ignore all generated files
+*.o
+*.ko
+*.mod.*
+*.cmd
+*.tar.*
+.tmp_versions
+modules.order
+Module.symvers
+linux-*/
+common/
+kernel/
+busybox/
+toybox/
