@@ -18,3 +18,4 @@ kernel/
 busybox/
 toybox/
 bin/
+.repo/

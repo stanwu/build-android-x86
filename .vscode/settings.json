@@ -6,6 +6,7 @@
         "common",
         "kernel",
         "busybox",
-        "toybox"
+        "toybox",
+        ".repo"
     ]
 }

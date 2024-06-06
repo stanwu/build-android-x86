@@ -17,3 +17,6 @@ mkdir -p $(pwd)/bin
 export PATH=$(pwd)/bin:$PATH
 curl -s https://storage.googleapis.com/git-repo-downloads/repo > $(pwd)/bin/repo
 chmod a+x $(pwd)/bin/repo
+
+bin/repo init -u https://android.googlesource.com/platform/manifest
+bin/repo sync -cdj16 --no-tags
