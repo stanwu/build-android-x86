@@ -12,6 +12,11 @@ sudo update-alternatives --install /bin/python python /usr/bin/python3 1
 sudo update-alternatives --install /bin/python python /usr/bin/python3.8 2
 sudo update-alternatives --config python
 
+if [ -z "$(git config user.email)" ]; then
+   git config --global user.email "aosp-dev@github.com"
+   git config --global user.name "github-user"
+fi
+
 #Install repo command
 mkdir -p $(pwd)/bin
 export PATH=$(pwd)/bin:$PATH
