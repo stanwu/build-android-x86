@@ -8,3 +8,5 @@ Step 1. Create a build environment
 ```
 ./install_build_env.sh 
 ```
+
+## Android 11.0.0 r1
