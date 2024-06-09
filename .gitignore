@@ -19,3 +19,4 @@ busybox/
 toybox/
 bin/
 .repo/
+key-file.json

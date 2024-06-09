@@ -1,5 +1,8 @@
 {
     "name": "Build AOSP source code",
     "postCreateCommand": "bash .devcontainer/post-create.sh",
-    "postStartCommand": "bash .devcontainer/post-start.sh"
+    "postStartCommand": "bash .devcontainer/post-start.sh",
+    "remoteEnv": {
+        "GCLOUD_AUTH": "${{ secrets.GCLOUD_AUTH }}"
+    }
 }
