@@ -4,7 +4,7 @@ Based on Ubuntu 20.04.6 LTS
 
 ## If you open this project with GitHub Codespaces
 
-Because of Codespaces will install `gcloud` cli automatically that will toke 1-3 mins to install
+Because of Codespaces will install `gcloud` cli automatically that will take 1-3 mins to install
 
 ## Build environment required 
 
