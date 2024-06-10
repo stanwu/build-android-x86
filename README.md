@@ -42,4 +42,8 @@ gcloud compute scp ./install_build_env.sh [your_login_id]@[your_instance]:~/
 gcloud compute ssh [your_login_id]@[your_instance]
 ```
 
+### <font color=#AA0000>WARNING:</font> Please watch your GCP billing
+
+> If you use `create-gcp-ubuntu-2004-lts.sh` to create an instance, please monitor your GCP regularly or delete the instance when you don't need it anymore.
+
 ## Android 11.0.0 r1
