@@ -2,10 +2,6 @@
 
 Based on Ubuntu 20.04.6 LTS
 
-## If you open this project with GitHub Codespaces
-
-Because of Codespaces will install `gcloud` cli automatically that will take 1-3 mins to install
-
 ## Build environment required 
 
 - i5 above CPU
@@ -16,11 +12,34 @@ Because of Codespaces will install `gcloud` cli automatically that will take 1-3
 
 ## How to Build the AOSP Quickly
 
-Step 1. Create a build environment
+Create a build environment
 ```
 mkdir android-x86
 cd android-x86
 [path]/install_build_env.sh 
+```
+
+## Build AOSP on GCP (optional)
+
+### If you need build AOSP on GCP, you can install gcloud command
+
+```
+./install_gcloud_cli.sh
+gcloud projects list
+gcloud config set project [you_project_id]
+```
+
+### Create a 300GB HDD instance on GCP to download AOSP repo
+
+```
+./create-gcp-instance.sh [your_instance]
+```
+
+### You can scp install build tools script into your instance, and run it to download AOSP repo
+
+```
+gcloud compute scp ./install_build_env.sh [your_login_id]@[your_instance]:~/
+gcloud compute ssh [your_login_id]@[your_instance]
 ```
 
 ## Android 11.0.0 r1
