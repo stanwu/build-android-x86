@@ -11,3 +11,5 @@ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 echo "deb https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 sudo apt-get update
 sudo apt-get -y install google-cloud-sdk
+
+[ -f key-file.json ] && gcloud auth activate-service-account --key-file=key-file.json
